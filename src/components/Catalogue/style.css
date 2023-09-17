@@ -1,0 +1,194 @@
+
+.vegetable-div .heading{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 2.4rem;
+    font-weight:900;
+    letter-spacing: 0.1rem;
+    position:relative;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .vegetable-div .heading::after
+  {
+    content:'';
+    height:5px;
+    border-radius: 7px;
+    width:130px;
+    background:orange;
+    position:absolute;
+    left:calc(56% - 10%);
+    bottom:-12px;
+  }
+p.vegprice,p.quantity{
+    color:#fff;
+    font-size:1.2rem;
+    margin-left:1.2rem;
+
+}
+.vegetable-div{
+    /* background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949; */
+    /* background: url('../../assets/background_image.jpg');
+background-size: 100%; */
+
+margin-top:-30px;
+margin-bottom:-20px;
+padding:0;
+padding-top:40px;
+}
+p.vegname{
+    color:#fff;
+    text-align: center;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    font-weight:600;
+
+}
+.me-2{
+    height:50px;
+    box-shadow: none;
+outline:none;
+border:0 none;
+}
+.vegetable-card button{
+    padding:15px 25px;
+    border:none;
+    border-radius: 7px;
+    margin-left:20px;
+    background-color: #fff;
+}
+.vegetable-card button .butn{
+    color:#222;
+}
+
+.vegetable-card button:hover{
+    background-color: #000;
+}
+.vegetable-card button:hover .butn{
+    color:#fff;
+
+}
+.main-card{
+    position: relative;
+    width:320px;
+    height:420px;
+    margin:30px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    border:2px solid #fff;
+    background: transparent;
+    overflow: hidden;
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main-card::before{
+    content:'';
+            position: absolute;
+            top:-65%;
+            width:100%;
+            height:100%;
+            background:#2196f3;
+            background-image: linear-gradient(45deg,#4ca1af 0%,#2c3e50 100% );
+
+            transform:skewY(320deg);
+            transition: .5s;
+}
+.main-card:hover::before{
+    top:-70%;
+    transform: skewY(395deg);
+}
+.main-card::after{
+    /* content:'sagar'; */
+    position: absolute;
+    bottom:0;
+    left:0;
+    font-weight: 600;
+    font-size:8em;
+    color:rgba(0,0,0,0.1);
+}
+
+.searchbar{
+    background-color: #fff;
+    height:60px;
+    width:750px;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.searchbar::placeholder{
+    color:#555;
+}
+.imgbox{
+    position: relative;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top:50px;
+            z-index:1;
+}
+
+.imgbox .imgg{
+    /* max-width:90%; */
+    transition: .5s;
+    border-radius: 50%;
+    width: 200px;
+    height:180px;
+}
+.main-card:hover .imgbox .imgg{
+    width:160px;
+    height:140px;
+}
+
+
+.main-card .content{
+    position:relative;
+    padding:20px;
+    padding-top:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.main-card .content .vegname{
+    font-size:1.7rem;
+}
+.main-card:hover .content{
+    padding-top:20px;
+}
+.main-card:hover .content button{
+    margin-top:0px;
+    border:2px solid #fff;
+}
+.main-card:hover .content .vegname{
+    margin-bottom:0px;
+
+}
+.content button:hover{
+    background:transparent;
+}
+.main-card .content button{
+    margin-top:50px;
+}
+.searchbtn {
+    color:#fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-weight:500;
+    padding:16px 20px;
+    cursor: pointer;
+  }
+.searchbtn:hover{
+  color: #222;
+  background-color: white;
+}
